@@ -1,0 +1,29 @@
+<div *ngIf="contentData && contentData.length > 0" class="carroseul-container grid">
+  <img class="carroseul-container__img fade" *ngFor="let image of contentData; let i = index"
+  [src]="image.imageSrc" [alt]="image.imageAtl"
+  [ngClass]="{'image-active': selectedIndex === i}"
+  >
+
+  <div *ngFor="let data of contentData; let i = index"
+   [ngClass]="{'data-active': selectedIndex === i}" class="data fade ">
+    <h3 class="data__title">{{ data.titleProject }}</h3>
+    <p class="data__paragraph">{{ data.paragraphs }}</p>
+    <a [href]="data.linkProject" class="data__button">
+      Demo
+      <img class="data__icon" src="assets/icons/012-up-arrow.png" alt="">
+    </a>
+  </div>
+
+  <div *ngIf="indicators" class="carroseul-dot-container">
+    <span *ngFor="let dot of contentData; let i = index"
+    class="dot" [ngClass]="{'active': selectedIndex === i}"
+    (click)="selectImage(i)"></span>
+  </div>
+
+  <button *ngIf="controls" class="btn-carroseul btn-prev" (click)="onPrevClick()">
+    <img class="btn-carroseul__arrow-left" src="/assets/icons/001-right-arrow.png" alt="">
+  </button>
+  <button *ngIf="controls" class="btn-carroseul btn-next" (click)="onNextClick()">
+    <img class="btn-carroseul__arrow-right" src="/assets/icons/001-right-arrow.png" alt="">
+  </button>
+</div>

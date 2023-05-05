@@ -1,0 +1,341 @@
+<header class="header">
+  <nav class="nav container">
+    <a href="" class="nav__logo">Leia Oliver</a>
+    <div class="nav__menu" [ngClass]="{'show-menu': toggleMenu === true}">
+      <ul class="nav__list grid">
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/home.png" alt="">
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/user.png" alt="">
+            <span>
+              Sobre mim
+            </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/flash.png" alt="">
+            <span>
+              Habilidaes
+            </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/005-pasta.png" alt="">
+            <span>
+              Formações
+            </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/010-lamp.png" alt="">
+            <span>
+              Serviços
+            </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/picture.png" alt="">
+            <span>
+              Portifólio
+            </span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="">
+            <img class="nav__logo-menu" src="/assets/icons/001-right-arrow.png" alt="">
+            <span>
+              Contate-me
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--
+      caso eu queira mexer com troca de lingua
+      <div class="nav__butons">
+      <label for=""></label>
+    </div> -->
+    <div class="nav__buttons">
+      <i></i>
+      <div class="nav__toggle" (click)="showMenu()">
+        <button class="nav__toogle--button">
+          <div class="nav__toggle bar"></div>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="container main">
+  <section class="home section">
+    <div class="home__container auto grid">
+      <div class="home__content grid">
+        <div class="home__social">
+          <a href="">
+            <img src="/assets/icons/006-linkedin.png" alt="">
+          </a>
+          <a href="">
+            <img src="/assets/icons/007-github.png" alt="">
+          </a>
+          <a href="">
+            <img src="/assets/icons/008-telegram.png" alt="">
+          </a>
+          <a href="">
+            <img src="/assets/icons/009-medium.png" alt="">
+          </a>
+
+        </div>
+        <div class="home__image">
+          <img src="/assets/home/leia.svg" alt="">
+        </div>
+        <div class="home__data">
+          <h1>Olá, meu nome é Leia</h1>
+          <h3>Desenvolvedor Web</h3>
+          <p>Apaixonado pela web e tudo que é possível fazer com ela.</p>
+          <a class="home__button-flex" href="#contato">
+            Contate-me
+            <img class="home__button-flex--seta-direita" src="/assets/icons/001-right-arrow.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="home__scroll grid">
+        <a href="#about">
+          <img class="home__scroll--mouse" src="/assets/icons/mouse.png" alt="">
+          <span>Role para baixo</span>
+          <img class="home__scroll--down" src="/assets/icons/011-down-arrow.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="sobre-mim">
+    <h2 class="sobre-mim__title">Sobre Mim!!</h2>
+    <p class="sobre-mim__description">Deixa eu me apresentar</p>
+    <div class="sobre-mim__container auto grid">
+        <img class="sobre-mim__avatar" src="/assets/avatar/Leia-avatar.png" alt="">
+      <div class="sobre-mim__data">
+        <h3 class="sobre-mim__data--localization">Salvador, Bahia</h3>
+        <p class="sobre-mim__data--resume">
+          Estava cursando o 5º semestre em administração e não estava satisfeita, minha paixão sempre
+          foi tecnologia, foi quando em julho de 2022 decidir mudar de carreira e seguir meus sonhos.
+          Estou cursando Análise e Desenvolvimento de Sistemas na Unicesumar e como apoio estou me
+          dedicando a cursos e tendo a frontendmentor como minha principal experiência na prática
+          desenvolvendo e cumprindo os desafios dados.
+        </p>
+        <div class="sobre-mim__button">
+          <a class="home__button-flex" href="#">
+            Baixe CV
+            <img src="/assets/icons/002-download.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills section">
+    <h2 class="skills__title">Habilidades</h2>
+    <p class="skills__description">Deixa eu me apresentar</p>
+    <div class="skills__container auto">
+      <div>
+        <div class="skills__content skills__open">
+          <div class="skills__header">
+            <img class="skills__header--brackets" src="/assets/icons/brackets.png" alt="">
+            <div>
+              <h2 class="skills__header--title">Front End</h2>
+            </div>
+            <img class="skills__header--right-arrow" src="/assets/icons/001-right-arrow.png" alt="">
+          </div>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <img class="skills__icon" src="/assets/icons/html.png" alt="HTML 5">
+              <div class="skills__title-content">
+                <h3>HTML</h3>
+                <img class="skills__star" src="/assets/icons/003-star.png" alt="">
+              </div>
+            </div>
+            <div class="skills__data">
+              <img class="skills__icon" src="/assets/icons/css-3.png" alt="HTML 5">
+              <div class="skills__title-content">
+                <h3>CSS</h3>
+                <img class="skills__star" src="/assets/icons/003-star.png" alt="">
+              </div>
+            </div>
+            <div class="skills__data">
+              <img class="skills__icon" src="/assets/icons/js.png" alt="HTML 5">
+              <div class="skills__title-content">
+                <h3>Javascript</h3>
+                <img class="skills__star" src="/assets/icons/003-star.png" alt="">
+              </div>
+            </div>
+            <div class="skills__data">
+              <img class="skills__icon" src="/assets/icons/react.png" alt="HTML 5">
+              <div class="skills__title-content">
+                <h3>React</h3>
+                <img class="skills__star" src="/assets/icons/003-star.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="qualification section">
+    <h2 class="qualification__title">Qualificações</h2>
+    <p class="qualification__description">Minha jornada profisional</p>
+    <div class="qualification__container auto">
+      <div class="qualification__tabs">
+        <div class="qualification__button button-flex active">
+          <img src="/assets/icons/004-graduate.png" alt="">
+          <span>Formação</span>
+        </div>
+        <div class="qualification__button button-flex ">
+          <img src="/assets/icons/005-pasta.png" alt="">
+          <span>Profissonal</span>
+        </div>
+      </div>
+      <div class="qualification__section qualification__active">
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__subtitle">
+              Análise e Desenvolvimento de Sistemas</h3>
+              <span class="qualification__title--training">EAD - Unicesumar</span>
+              <div class="qualification__date">
+                <img src="/assets/icons/calendar.png" alt="">
+                <span class="calendar">07/2022 - 12/2024</span>
+              </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+        <div class="qualification__data">
+          <div></div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+          </div>
+          <div>
+            <h3 class="qualification__subtitle">
+              REDE MIX - ESTÁGIO</h3>
+              <span>EAD - Unicesumar</span>
+              <div class="qualification__date">
+                <img src="/assets/icons/calendar.png" alt="">
+                <span class="qualification__date--calendar">07/2022 - 12/2024</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="studying section">
+    <h2 class="studying__title">Interesses</h2>
+    <p class="studying__description">Meu foco de estudo</p>
+    <div class="studying__conteiner auto grid">
+      <div class="studying__content">
+        <div class="studying__data">
+          <img class="studying__data--bracket" src="/assets/icons/brackets.png" alt="">
+          <h3 class="studying__data--title">Desenvolvimento <br>Front-end</h3>
+          <button class="studying__button button-flex">
+            Ver mais
+            <img class="studying__right-arrow" src="/assets/icons/001-right-arrow.png" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="studying__content">
+        <div class="studying__data">
+          <img class="studying__data--bracket" src="/assets/icons/data-storage.png" alt="">
+          <h3 class="studying__data--title">Ciência <br>de dados</h3>
+          <button class="studying__button button-flex" (click)="showModal()">
+            Veja mais
+            <img class="studying__right-arrow" src="/assets/icons/001-right-arrow.png" alt="">
+          </button>
+        </div>
+      </div>
+      <app-modal-studyng [toggle] = "toggle"></app-modal-studyng>
+    </div>
+  </section>
+  <section class="portifolio section">
+    <h2 class="portifolio__title">Portifólio</h2>
+    <p class="portifolio__description">Meus projetos recentes</p>
+
+    <!-- <div class="items-wrapper">
+      <div #scroll class="items" (mousewheel)="whell(scroll)">
+        <div class="item"><img src="https://images.unsplash.com/photo-1675755848374-27b8712b6769?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt=""></div>
+        <div class="item"><img src="https://images.unsplash.com/photo-1661956600654-edac218fea67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
+        <div class="item"><img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
+        <div class="item"><img src="https://images.unsplash.com/photo-1675762157193-ed84fc458611?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
+      </div>
+    </div> -->
+    <app-carroseul [contentData]="contentData"></app-carroseul>
+
+  </section>
+  <section class="contact section" id="contato">
+    <h2 class="contact__title">Interesses</h2>
+    <p class="contact__description">Meu foco de estudo</p>
+    <div class="contact__container auto grid">
+      <div class="contact__content">
+        <div class="contact__infomation">
+          <img class="contact__logo" src="/assets/icons/008-telegram.png" alt="">
+          <div class="contact__social">
+            <h3 class="contact__social-title">Telegram</h3>
+            <a class="contact__social-link" href="">Meu contato</a>
+          </div>
+        </div>
+        <div class="contact__infomation">
+          <img class="contact__logo" src="/assets/icons/pin.png" alt="">
+          <div class="contact__social">
+            <h3 class="contact__social-title">Localização</h3>
+            <p class="contact__social-link" href="">Brasil - Bahia/Salvador</p>
+          </div>
+        </div>
+        <div class="contact__infomation">
+          <img class="contact__logo" src="/assets/icons/redes-sociais.png" alt="">
+          <div class="contact__social">
+            <h3 class="contact__social-title">Telegram</h3>
+            <a class="contact__social-midia" href="">
+              <img src="/assets/icons/006-linkedin.png" alt="">
+            </a>
+            <a class="contact__social-midia" href="">
+              <img src="/assets/icons/007-github.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <form action="" class="contact__form grid">
+        <div class="contact__inputs grid">
+          <div class="contact__content-form">
+            <label for="" class="contact__label">Nome</label>
+            <input type="text" class="contact__input">
+          </div>
+          <div class="contact__content-form">
+            <label for="" class="contact__label">Email</label>
+            <input type="text" class="contact__input">
+          </div>
+          <div class="contact__content-form">
+            <label for="" class="contact__label">Assunto</label>
+            <input type="text" class="contact__input">
+          </div>
+          <div class="contact__content-form">
+            <label for="" class="contact__label">Mensagem</label>
+            <input type="text" class="contact__input">
+          </div>
+          <div class="contact__content-button">
+            <button class="button button-flex contact__button">
+              <span>Enviar</span>
+              <img class="contact__button-icon" src="/assets/icons/001-right-arrow.png" alt="">
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
